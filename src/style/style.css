@@ -1,0 +1,43 @@
+body{
+    background-image: url('../img/backgroundImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: auto;
+}
+.h1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.container{
+  background: linear-gradient(to top,#0D0D0D,#038C73);
+  width: 35%;
+  height: 500px;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.box{
+    font-size: 30px;
+    padding: 15px; 
+    width: 400px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: #038C73;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.box:hover{
+    transition: 0,1s;
+    background-color: #027373;
+}
+
+
+
