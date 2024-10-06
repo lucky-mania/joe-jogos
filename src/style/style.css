@@ -55,7 +55,6 @@ a:hover{
 p{
     color: white;
     text-align: start;
-    margin-left: 120px;
 }
 @media screen and (max-width: 767px){
     h1{
@@ -67,10 +66,10 @@ p{
     }
     .box{
         font-size: 24px;
-        height: 30px;
+        height: 20px;
         width: 200px;
     }
     p{
-       
+        margin-left: 120px;
     }
 }
