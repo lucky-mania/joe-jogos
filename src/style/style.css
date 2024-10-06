@@ -24,7 +24,7 @@ body{
 .container{
   margin-top: 14px;
   background: linear-gradient(to top,rgb(15, 13, 13), #1B7F7A);
-  width: 31%;
+  width: 25%;
   height: 500px;
   flex-direction: column;
   border-radius: 10px;
