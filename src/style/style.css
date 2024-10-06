@@ -65,6 +65,9 @@ p{
     
 }
 @media screen and (max-width: 767px){
+    body{
+        background-size: auto;
+    }
     h1{
         font-size: 20px;
     }
