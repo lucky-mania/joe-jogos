@@ -3,7 +3,6 @@ body{
     background-image: url('../img/backgroundImg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: auto;
 }
 .h1{
     font-family: "Protest Strike", sans-serif;
