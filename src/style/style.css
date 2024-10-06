@@ -50,7 +50,9 @@ p{
 }
 
 @media screen and (max-width: 767px){
-
+    h1{
+        font-size: 15px;
+    }
     .container{
         margin-top: 60px;
         width: 80%;
