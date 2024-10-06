@@ -49,13 +49,13 @@ p{
     color: white;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     .container{
         margin-top: 10px;
-        width: 70%;
+        width: 80%;
     }
     .box{
-        width: 300px;
+        width: 200px;
     }
 }
