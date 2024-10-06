@@ -14,6 +14,7 @@ body{
     justify-content: center;
 }
 .container{
+  margin-top: 14px;
   background: linear-gradient(to top,rgb(15, 13, 13), #1B7F7A);
   width: 31%;
   height: 500px;
@@ -27,7 +28,7 @@ body{
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
 .box{
-    font-size: 30px;
+    font-size: 35px;
     padding: 15px; 
     width: 400px;
     height: 50px;
@@ -49,8 +50,9 @@ p{
 }
 
 @media screen and (max-width: 768px){
-    
+
     .container{
+        margin-top: 10px;
         width: 70%;
     }
     .box{
