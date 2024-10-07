@@ -12,8 +12,8 @@ body{
     justify-content: center;
     margin-top: 70px;
 }
-.header > img{
-    height: 180px;
+.img{
+    height: 160px;
 }
 .h2{
     font-family: "Protest Strike", sans-serif;
@@ -88,7 +88,7 @@ marquee > img{
     width: 335px;
    }
   .img{
-    height: 75px!important;
+    height: 70px!important;
   }
   marquee > img{
     padding: -15px;
