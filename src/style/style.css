@@ -72,13 +72,6 @@ marquee > img{
     body{
         background-size: auto;
     }
-    .header{
-        font-family:"Protest Strike", sans-serif ;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-
-    }
     .container{
         margin-top: 50px;
         width: 80%;
