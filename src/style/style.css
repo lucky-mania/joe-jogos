@@ -27,7 +27,7 @@ body{
   margin-top: 14px;
   background: linear-gradient(to top,rgb(15, 13, 13), #1B7F7A);
   width: 25%;
-  height: 500px;
+  height: 520px;
   flex-direction: column;
   border-radius: 10px;
   border: 3px solid black;
@@ -70,11 +70,11 @@ p{
     body{
         background-size: auto;
     }
-    h1{
+    .h1{
         font-size: 20px;
     }
     .container{
-        margin-top: 14px;
+        margin-top: 70px;
         width: 80%;
     }
     .box{
