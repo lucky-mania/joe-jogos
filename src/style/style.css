@@ -81,6 +81,10 @@ p{
     }
     h1{
         font-size: 20px;
+        margin-bottom: 100px;
+    }
+    img{
+        margin-bottom: 100px;
     }
     .container{
         margin-top: 14px;
@@ -88,7 +92,7 @@ p{
     }
     .box{
         font-size: 24px;
-        height: 60px;/*alterar*/
+        height: 80px;/*alterar*/
         width: 200px;
     }
    marquee{
