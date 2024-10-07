@@ -200,6 +200,7 @@ a.navbar-brand {
         background-color: var(--color-background);
         cursor: pointer;
         position: absolute; top: 80%; left: 50%; transform: translate(-50%, -55%);
+        border: 3px solid black;
         transition: 0.3s ease;
     }
     .banner-play:hover{
