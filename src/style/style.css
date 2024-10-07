@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-top: 70px;
 }
 .h2{
     font-family: "Protest Strike", sans-serif;
@@ -85,7 +85,7 @@ marquee > img{
     width: 335px;
    }
   .img{
-    height: 70px;
+    height: 90px;
   }
   marquee > img{
     height: 70px;
