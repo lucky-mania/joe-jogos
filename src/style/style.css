@@ -73,12 +73,15 @@ p{
         background-size: auto;
     }
     .h1{
-
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
         height: 50px;
         font-size: 15px;
     }
     .container{
-        margin-top: 90px;
+        margin-top: 50px;
         width: 80%;
     }
     .box{
