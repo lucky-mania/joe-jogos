@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        border: none;
-        outline: none;
-        scroll-behavior: smooth;/*descobrir*/
-}
 body{
     background-image: url('../img/backgroundImg.jpg');
     background-repeat: no-repeat;
@@ -81,10 +72,6 @@ p{
     }
     h1{
         font-size: 20px;
-        margin-bottom: 100px;
-    }
-    img{
-        margin-bottom: 100px;
     }
     .container{
         margin-top: 14px;
@@ -92,7 +79,7 @@ p{
     }
     .box{
         font-size: 24px;
-        height: 80px;/*alterar*/
+        height: 35px;
         width: 200px;
     }
    marquee{
