@@ -82,7 +82,7 @@ marquee > img{
         justify-content: center;
         height: 30px;
         font-size: 15px;
-        width: 530px;
+        width: 465px;
     }
     .container{
         margin-top: 50px;
@@ -96,6 +96,8 @@ marquee > img{
    marquee{
     width: 335px;
    }
-
+   marquee > img{
+    height: 85px;
+}
 }
 
