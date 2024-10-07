@@ -185,10 +185,6 @@ a.navbar-brand {
     width: 50px;
 }
     /*Banner-col-6*/
-
-   .b{
-    
-   }
     .banner-jogo{
         background-color: #e74c3c;
         display: flex;
@@ -204,6 +200,13 @@ a.navbar-brand {
         background-color: var(--color-background);
         cursor: pointer;
         position: absolute; top: 80%; left: 50%; transform: translate(-50%, -55%);
+        transition: 0.3s ease;
+    }
+    .banner-play:hover{
+        color: white;
+    transition: 0,1s;
+    background-color: #027373;
+    transform: scale(1.2)translateY(-30px);
     }
 .card-banner{
     height: 450px;
