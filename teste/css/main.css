@@ -199,13 +199,13 @@ a.navbar-brand {
         width: 150px;
         background-color: var(--color-background);
         cursor: pointer;
-        position: absolute; top: 80%; left: 50%; transform: translate(-50%, -55%);
+        position: absolute; top: 80%;left: 50%; transform: translate(-50%, -50%);
         border: 3px solid black;
         transition: 0.3s ease;
     }
     .banner-play:hover{
         color: white;
-    transition: 0,1s;
+    transition: 0,9s;
     background-color: #027373;
     transform: scale(1.2)translateY(-30px);
     }

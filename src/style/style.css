@@ -68,6 +68,9 @@ p{
     color: white;
     
 }
+marquee > img{
+    height: 100px;
+}
 @media screen and (max-width: 767px){
     body{
         background-size: auto;
@@ -79,7 +82,7 @@ p{
         justify-content: center;
         height: 30px;
         font-size: 15px;
-        width: 500px;
+        width: 530px;
     }
     .container{
         margin-top: 50px;
