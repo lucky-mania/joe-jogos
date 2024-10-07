@@ -41,7 +41,7 @@ body{
     font-size: 35px;
     padding: 15px; 
     width: 400px;
-    height: 40px;
+    height: 40px!important;
     border: 3px solid black;
     background-color: #038C73;
     margin-bottom: 30px;
@@ -71,10 +71,10 @@ p{
         background-size: auto;
     }
     h1{
-        font-size:45px;
+        font-size: 20px;
     }
     .container{
-        margin-top:60px;
+        margin-top: 14px;
         width: 80%;
     }
     .box{
@@ -86,4 +86,4 @@ p{
     width: 335px;
    }
 }
-/*parte 2*/
+
