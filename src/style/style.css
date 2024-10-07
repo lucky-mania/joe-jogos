@@ -77,8 +77,9 @@ p{
         margin: auto;
         align-items: center;
         justify-content: center;
-        height: 50px;
+        height: 30px;
         font-size: 15px;
+        width: 500px;
     }
     .container{
         margin-top: 50px;
@@ -92,5 +93,6 @@ p{
    marquee{
     width: 335px;
    }
+
 }
 
