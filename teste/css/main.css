@@ -189,7 +189,13 @@ a.navbar-brand {
    .b{
     
    }
-
+    .banner-jogo{
+        background-color: #e74c3c;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
 .card-banner{
     height: 450px;
     width: 450px;

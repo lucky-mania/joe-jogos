@@ -27,7 +27,7 @@ body{
   margin-top: 14px;
   background: linear-gradient(to top,rgb(15, 13, 13), #1B7F7A);
   width: 25%;
-  height: 520px;
+  height: 490px;
   flex-direction: column;
   border-radius: 10px;
   border: 3px solid black;
@@ -71,6 +71,9 @@ p{
         background-size: auto;
     }
     .h1{
+        background-color: #1B7F7A;
+        width: 600px;
+        height: 50px;
         font-size: 15px;
     }
     .container{
