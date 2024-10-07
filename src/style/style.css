@@ -4,14 +4,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.h1{
-    font-family: "Protest Strike", sans-serif;
-    font-size: 25px;
+.header{
+    font-family:"Protest Strike", sans-serif ;
+    text-align: center;
     display: flex;
     align-items: center;
-    padding: 60px;
-    margin-top: 90px;
-    height: 50px;
     justify-content: center;
 
 }
@@ -75,14 +72,12 @@ marquee > img{
     body{
         background-size: auto;
     }
-    .h1{
-        display: flex;
-        margin: auto;
+    .header{
+        font-family:"Protest Strike", sans-serif ;
+        text-align: center;
         align-items: center;
         justify-content: center;
-        height: 30px;
-        font-size: 15px;
-        width: 370px;
+
     }
     .container{
         margin-top: 50px;
@@ -97,7 +92,10 @@ marquee > img{
     width: 335px;
    }
   .img{
-    height: 80px;
+    height: 70px;
   }
+  marquee > img{
+    height: 70px;
+}
 }
 
