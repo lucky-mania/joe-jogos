@@ -1,19 +1,4 @@
 
-/* Desktop (col-lg) 992px+ */
-@media (min-width: 992px) {
-
-}
-
-/* Desktop e Tablets (col-md) 768px a 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Tablets (col-sm) 576px a 767px */
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
-
 /* Tablets e Celulares (col) 0px a 767px */
 @media (max-width: 767px) {
 
@@ -21,14 +6,12 @@
 ::-webkit-scrollbar{
     display: none;
 }
-/*container-mensagens*/
-.container-mensagens{
-    position: fixed;
-    right: 20px;
-    top: 84px!important;
-    z-index: 9999;
+/*Banner*/
+.juntos{
+    flex-direction: column;
 }
-    .no-mobile {
+    .price-produto{
+        background-color: aqua;
         display: none!important;
     }
 
@@ -91,14 +74,6 @@
     .title {
         font-size: 30px;
     }
-
-    /*container-mensagens*/
-    .container-mensagens{
-    position: fixed;
-    right: 20px;
-    top: 184px!important;
-    z-index: 9999;
-}
 /*Jogo*/
     .cardapio {
         padding-bottom: 50px;
@@ -181,42 +156,6 @@
         margin-top: 40px;
         margin-bottom: 50px;
         justify-content: center;
-    }
-
-    .modal-full {
-        padding: 40px;
-    }
-
-    .modal-full .item-carrinho {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .modal-full .img-produto {
-        position: relative;
-        left: 0;
-    }
-
-    .modal-full .img-produto img {
-        width: 50px;
-    }
-
-    .modal-full .dados-produto {
-        padding-left: 15px;
-        padding-right: 15px;
-        display: grid;
-    }
-
-    .modal-full .title-produto, .modal-full .price-produto {
-        font-size: 16px!important;
-    }
-
-    .modal-full .add-numero-itens {
-        padding: 2px 10px;
-    }
-
-    .modal-full .form-control {
-        font-size: 16px;
     }
 
 }
