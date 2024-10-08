@@ -12,7 +12,7 @@
     --color-black-heavy:#000;
     --color-text:#4f4f4f;
     --color-text-out:#90908e;
-    --color-primary:#2ecc71;
+    --color-primary:#1B7F7A;
     --color-secondary:#fff2cc;
     --color-white:#ffffff;
     --color-red:#e74c3c;
@@ -20,9 +20,10 @@
     --color-separate:#cccccc;
 }
 body{
-    background-image: url('../img/backgroundImg.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url('../img/backgroundImg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -17px;
 }
 html,body{
     font-family: 'PoppinsRegular', 'Rubik' , 'sans-serif';
@@ -178,7 +179,7 @@ a.navbar-brand {
     padding-top: 6px;
 }
 /*hasmester*/
-/* From Uiverse.io by Nawsome */ 
+/* From Uiverse.io by Nawsome */
 .wheel-and-hamster {
     --dur: 1s;
     position: relative;
@@ -527,7 +528,12 @@ a.navbar-brand {
        
     }
     .banner-img{
-        padding: 20px;
+        padding: 25px;
+        border-radius: 5px;
+        background-color: var(--color-primary);
+    }
+    img{
+      border-radius: 10px;
     }
     button {
         position: relative;
@@ -542,10 +548,13 @@ a.navbar-brand {
         font-size: 13px;
         font-weight: bold;
         color: #ddebf0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       
       #clip {
-        --color: #2761c3;
+        --color: #2761c3; 
         position: absolute;
         top: 0;
         overflow: hidden;
@@ -561,7 +570,7 @@ a.navbar-brand {
         transition: 0.2s;
         background-color: #2761c3;
         top: 35%;
-        margin-left: 5px;
+        margin-left: 1px;
         width: 11%;
         height: 30%;
       }
@@ -733,6 +742,7 @@ a.navbar-brand {
 .cardapio{
     padding-top:100px;
     padding-bottom: 150px;
+    background-color: var(--color-primary);/*deixar mais bonito, atencaooooooooooooooooooooooooooooooooo    */
 }
 .cardapio .background-cardapio{
     position: absolute;
