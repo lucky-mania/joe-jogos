@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Menu-Online-tste</title>
+        <title>Games</title>
     <head>
         <link rel="shortcut icon" href="../src/img/gamme-removebg-preview.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -39,12 +39,12 @@
                                 <a href="#jogos" class="nav-link"><b>projetos</b></a>
                             </li>
                         </ul>
-                        <a class="btn btn-white btn-icon wow fadeIn" href="../index.html">
-                            Voltar<span class="icon">
-                                <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
-                                <i class="fa fa-shopping-bag"></i>
-                            </span>
-                        </a>
+
+                          <a href="../index.html">
+                              <button class="buttons"> Voltar
+                                <span></span>
+                              </button>
+                          </a>
                     </div>
                 </nav>
             </div>
@@ -59,6 +59,11 @@
                             <p class="wow fadeInLeft delay-02s">
                                jogos classico.
                             </p>
+                            <div class="wow fadeIn delay-05s">
+                                <a class="btn btn-yellow mt-4 mr-3" href="#jogos">
+                                    Ver Jogos
+                                </a>
+                            </div>
                         </div>
                         <a href="https://www.instagram.com/limafront/" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-05s">
                             <i class="fab fa-instagram"></i>
@@ -67,17 +72,44 @@
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
+                        
+                    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster wow fadeInRight delay-07s">
+                        <div class="wheel"></div>
+                        <div class="hamster">
+                            <div class="hamster__body">
+                                <div class="hamster__head">
+                                    <div class="hamster__ear"></div>
+                                    <div class="hamster__eye"></div>
+                                    <div class="hamster__nose"></div>
+                                </div>
+                                <div class="hamster__limb hamster__limb--fr"></div>
+                                <div class="hamster__limb hamster__limb--fl"></div>
+                                <div class="hamster__limb hamster__limb--br"></div>
+                                <div class="hamster__limb hamster__limb--bl"></div>
+                                <div class="hamster__tail"></div>
+                            </div>
+                        </div>
+                        <div class="spoke"></div>
+                    </div>
 
-                    <div class="col-6 no-mobile">
-                        <h1 class="wow fadeInLeft"><b class="b">Lançamento de novo Jogo</b></h1>
+                    <div class="col-3 no-mobile wow fadeInRight delay-07s">
                         <div class="card-banner wow fadeIn delay-02s">
+                            <b class="titulo-card wow fadeInRight delay-07s">Game Novo</b>
 
-                            <div class="banner-jogo"><img src="../src/img/Captura de tela 2024-08-19 205744.png" alt="" width="400px">
+                            <div class="banner-img"><img src="../src/img/Captura de tela 2024-08-19 205744.png" alt="" width="410px">
                 
                             </div>
-                         <div class="banner-play">
-                            <h3>entrar</h3>
-                         </div>
+                            <button>
+                                P L A Y
+                                <div id="clip">
+                                    <div id="leftTop" class="corner"></div>
+                                    <div id="rightBottom" class="corner"></div>
+                                    <div id="rightTop" class="corner"></div>
+                                    <div id="leftBottom" class="corner"></div>
+                                </div>
+                                <span id="rightArrow" class="arrow"></span>
+                                <span id="leftArrow" class="arrow"></span>
+                            </button>
                         </div>
                         <div class="d-flex img-banner wow fadeIn delay-05s">
                             <img src="#" alt="">>
@@ -110,7 +142,146 @@
                     <div class="col-12 col-one">
                         <div class="row" id="itensCardapio">
 
-                            
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
+                                <div class="card card-item" id="\${id}">
+                                    <div class="img-produto">
+                                        <img src="../src/img/Captura de tela 2024-08-19 205744.png" />
+                                    </div>
+                                    <p class="title-produto text-center mt-4">
+                                        <b>\${nome}</b>
+                                    </p>
+                                    <p class="price-produto text-center">
+                                        <b>R$ \${preco}</b>
+                                    </p>
+                                    <div class="add-carrinho">
+                                        <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')"><i class="fas fa-minus"></i></span>
+                                        <span class="add-numero-itens" id="qntd-\${id}">0</span>
+                                        <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
+                                        <span class="btn btn-add" onclick="cardapio.metodos.adicionarAoCarrinho('\${id}')"><i class="fa fa-shopping-bag"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-5  animated fadeInUp">
                                 <div class="card card-item" id="\${id}">
                                     <div class="img-produto">

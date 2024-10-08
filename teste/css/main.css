@@ -36,7 +36,7 @@ html,body{
     width: 15px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--color-primary);
+    background: rgba(0,0,0,0.3);;
 }
 ::-webkit-scrollbar-track{
     background-color: var(--color-secondary);
@@ -79,7 +79,61 @@ html,body{
 .navbar-brand:hover{
     transform: scale(1.1);
 }
-    
+    /* botao voltarl */ 
+    .buttons {
+        border: none;
+        display: block;
+        position: relative;
+        padding: 0.7em 2.4em;
+        font-size: 18px;
+        background: transparent;
+        cursor: pointer;
+        user-select: none;
+        overflow: hidden;
+        color: black;
+        z-index: 1;
+        font-family: inherit;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      
+      .buttons span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background: transparent;
+        z-index: -1;
+        border: 4px solid var(--color-primary);
+      }
+      
+      .buttons span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8%;
+        height: 500%;
+        background: var(--lightgray);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-60deg);
+        transition: all 0.3s;
+      }
+      
+      .buttons:hover span::before {
+        transform: translate(-50%, -50%) rotate(-90deg);
+        width: 100%;
+        background: var(--color-primary);
+      }
+      
+      .buttons:hover {
+        color: white;
+      }
+      
+      .buttons:active span::before {
+        background: var(--color-primary);
+      }
 b{
     font-family: 'PoppinsMedium', 'Rubik' , 'sans-serif';
 }
@@ -123,6 +177,282 @@ a.navbar-brand {
     text-align: center;
     padding-top: 6px;
 }
+/*hasmester*/
+/* From Uiverse.io by Nawsome */ 
+.wheel-and-hamster {
+    --dur: 1s;
+    position: relative;
+    left: 370px;
+    bottom: 55px;
+    width: 12em;
+    height: 12em;
+    font-size: 14px;
+  }
+  
+  .wheel,
+  .hamster,
+  .hamster div,
+  .spoke {
+    position: absolute;
+  }
+  
+  .wheel,
+  .spoke {
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wheel {
+    background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
+    z-index: 2;
+  }
+  
+  .hamster {
+    animation: hamster var(--dur) ease-in-out infinite;
+    top: 50%;
+    left: calc(50% - 3.5em);
+    width: 7em;
+    height: 3.75em;
+    transform: rotate(4deg) translate(-0.8em,1.85em);
+    transform-origin: 50% 0;
+    z-index: 1;
+  }
+  
+  .hamster__head {
+    animation: hamsterHead var(--dur) ease-in-out infinite;
+    background: hsl(30,90%,55%);
+    border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
+    box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
+          0.75em -1.55em 0 hsl(30,90%,90%) inset;
+    top: 0;
+    left: -2em;
+    width: 2.75em;
+    height: 2.5em;
+    transform-origin: 100% 50%;
+  }
+  
+  .hamster__ear {
+    animation: hamsterEar var(--dur) ease-in-out infinite;
+    background: hsl(0,90%,85%);
+    border-radius: 50%;
+    box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
+    top: -0.25em;
+    right: -0.25em;
+    width: 0.75em;
+    height: 0.75em;
+    transform-origin: 50% 75%;
+  }
+  
+  .hamster__eye {
+    animation: hamsterEye var(--dur) linear infinite;
+    background-color: hsl(0,0%,0%);
+    border-radius: 50%;
+    top: 0.375em;
+    left: 1.25em;
+    width: 0.5em;
+    height: 0.5em;
+  }
+  
+  .hamster__nose {
+    background: hsl(0,90%,75%);
+    border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
+    top: 0.75em;
+    left: 0;
+    width: 0.2em;
+    height: 0.25em;
+  }
+  
+  .hamster__body {
+    animation: hamsterBody var(--dur) ease-in-out infinite;
+    background: hsl(30,90%,90%);
+    border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
+    box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
+          0.15em -0.5em 0 hsl(30,90%,80%) inset;
+    top: 0.25em;
+    left: 2em;
+    width: 4.5em;
+    height: 3em;
+    transform-origin: 17% 50%;
+    transform-style: preserve-3d;
+  }
+  
+  .hamster__limb--fr,
+  .hamster__limb--fl {
+    clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
+    top: 2em;
+    left: 0.5em;
+    width: 1em;
+    height: 1.5em;
+    transform-origin: 50% 0;
+  }
+  
+  .hamster__limb--fr {
+    animation: hamsterFRLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
+    transform: rotate(15deg) translateZ(-1px);
+  }
+  
+  .hamster__limb--fl {
+    animation: hamsterFLLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
+    transform: rotate(15deg);
+  }
+  
+  .hamster__limb--br,
+  .hamster__limb--bl {
+    border-radius: 0.75em 0.75em 0 0;
+    clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
+    top: 1em;
+    left: 2.8em;
+    width: 1.5em;
+    height: 2.5em;
+    transform-origin: 50% 30%;
+  }
+  
+  .hamster__limb--br {
+    animation: hamsterBRLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
+    transform: rotate(-25deg) translateZ(-1px);
+  }
+  
+  .hamster__limb--bl {
+    animation: hamsterBLLimb var(--dur) linear infinite;
+    background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
+    transform: rotate(-25deg);
+  }
+  
+  .hamster__tail {
+    animation: hamsterTail var(--dur) linear infinite;
+    background: hsl(0,90%,85%);
+    border-radius: 0.25em 50% 50% 0.25em;
+    box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
+    top: 1.5em;
+    right: -0.5em;
+    width: 1em;
+    height: 0.5em;
+    transform: rotate(30deg) translateZ(-1px);
+    transform-origin: 0.25em 0.25em;
+  }
+  
+  .spoke {
+    animation: spoke var(--dur) linear infinite;
+    background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
+          linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
+  }
+  
+  /* Animations */
+  @keyframes hamster {
+    from, to {
+      transform: rotate(4deg) translate(-0.8em,1.85em);
+    }
+  
+    50% {
+      transform: rotate(0) translate(-0.8em,1.85em);
+    }
+  }
+  
+  @keyframes hamsterHead {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(8deg);
+    }
+  }
+  
+  @keyframes hamsterEye {
+    from, 90%, to {
+      transform: scaleY(1);
+    }
+  
+    95% {
+      transform: scaleY(0);
+    }
+  }
+  
+  @keyframes hamsterEar {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(12deg);
+    }
+  }
+  
+  @keyframes hamsterBody {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(0);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  @keyframes hamsterFRLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(50deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-30deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes hamsterFLLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(-30deg);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(50deg);
+    }
+  }
+  
+  @keyframes hamsterBRLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(-60deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(20deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes hamsterBLLimb {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(20deg);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(-60deg);
+    }
+  }
+  
+  @keyframes hamsterTail {
+    from, 25%, 50%, 75%, to {
+      transform: rotate(30deg) translateZ(-1px);
+    }
+  
+    12.5%, 37.5%, 62.5%, 87.5% {
+      transform: rotate(10deg) translateZ(-1px);
+    }
+  }
+  
+  @keyframes spoke {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(-1turn);
+    }
+  }
 /*Banner-col-6*/
 .background-banner{
     background-image: url(../img/bg-icons-1.png);
@@ -141,7 +471,7 @@ a.navbar-brand {
 .text-banner{
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 .text-banner h1{
     color: var(--color-black);
@@ -185,43 +515,196 @@ a.navbar-brand {
     width: 50px;
 }
     /*Banner-col-6*/
-    .banner-jogo{
-        background-color: #e74c3c;
+    .titulo-card{
         display: flex;
-        margin: auto;
-        flex-direction: column;
-        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    }
-    .banner-play{
-        display: flex;
+        text-align: center;
+        align-items: center;
         justify-content: center;
-        border-radius: 10px;
-        width: 150px;
-        background-color: var(--color-background);
-        cursor: pointer;
-        position: absolute; top: 80%;left: 50%; transform: translate(-50%, -50%);
-        border: 3px solid black;
-        transition: 0.3s ease;
+        margin-top: 110px;
+        width: 410px;
+        font-size: 40px;
+        color: var(--color-background);
+       
     }
-    .banner-play:hover{
-        color: white;
-    transition: 0,9s;
-    background-color: #027373;
-    transform: scale(1.2)translateY(-30px);
+    .banner-img{
+        padding: 20px;
     }
+    button {
+        position: relative;
+        top: 20px;
+        left: 150px;/*alterar*/
+        width: 11em;
+        height: 4em;
+        outline: none;
+        transition: 0.1s;
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+        font-weight: bold;
+        color: #ddebf0;
+      }
+      
+      #clip {
+        --color: #2761c3;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border: 5px double var(--color);
+        box-shadow: inset 0px 0px 15px #195480;
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      }
+      
+      .arrow {
+        position: absolute;
+        transition: 0.2s;
+        background-color: #2761c3;
+        top: 35%;
+        margin-left: 5px;
+        width: 11%;
+        height: 30%;
+      }
+      
+      #leftArrow {
+        left: -13.5%;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+      }
+      
+      #rightArrow {
+        -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+        left: 102%;
+      }
+      
+      button:hover #rightArrow {
+        background-color: #27c39f;
+        left: -15%;
+        animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+      }
+      
+      button:hover #leftArrow {
+        background-color: #27c39f;
+        left: 103%;
+        animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+      }
+      
+      .corner {
+        position: absolute;
+        width: 4em;
+        height: 4em;
+        background-color: #2761c3;
+        box-shadow: inset 1px 1px 8px #2781c3;
+        transform: scale(1) rotate(45deg);
+        transition: 0.2s;
+      }
+      
+      #rightTop {
+        top: -1.98em;
+        left: 91%;
+      }
+      
+      #leftTop {
+        top: -1.96em;
+        left: -3.0em;
+      }
+      
+      #leftBottom {
+        top: 2.10em;
+        left: -2.15em;
+      }
+      
+      #rightBottom {
+        top: 45%;
+        left: 88%;
+      }
+      
+      button:hover #leftTop {
+        animation: 0.1s ease-in-out 0.05s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #rightTop {
+        animation: 0.1s ease-in-out 0.15s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #rightBottom {
+        animation: 0.1s ease-in-out 0.25s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover #leftBottom {
+        animation: 0.1s ease-in-out 0.35s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+      }
+      
+      button:hover .corner {
+        transform: scale(1.25) rotate(45deg);
+      }
+      
+      button:hover #clip {
+        animation: 0.2s ease-in-out 0.55s both greenLight8;
+        --color: #27c39f;
+      }
+      
+      @keyframes changeColor8 {
+        from {
+          background-color: #2781c3;
+        }
+      
+        to {
+          background-color: #27c39f;
+        }
+      }
+      
+      @keyframes lightEffect8 {
+        from {
+          box-shadow: 1px 1px 5px #27c39f;
+        }
+      
+        to {
+          box-shadow: 0 0 2px #27c39f;
+        }
+      }
+      
+      @keyframes greenLight8 {
+        from {
+        }
+      
+        to {
+          box-shadow: inset 0px 0px 32px #27c39f;
+        }
+      }
+      
+      @keyframes leftArrow8 {
+        from {
+          transform: translate(0px);
+        }
+      
+        to {
+          transform: translateX(10px);
+        }
+      }
+      
+      @keyframes rightArrow8 {
+        from {
+          transform: translate(0px);
+        }
+      
+        to {
+          transform: translateX(-10px);
+        }
+      }
+      
+      
+      
 .card-banner{
-    height: 450px;
+    height: 410px;
     width: 450px;
     border-radius: 10px;
-    background-color: #2ecc71   ;
+    background: rgba(0,0,0,0.6);
     margin-left: 40px;
     
-}
-.img-banner img{
-    position: absolute;
-    width: 570px;
-    top: 30px;
-    right: 15px;
 }
 .card{
     border-radius: 20px;
@@ -232,21 +715,23 @@ a.navbar-brand {
 }
 .card-case{
     width: 350px;
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
-    right: 0;
+    margin-left: 19px;
+    top: 500px;
+    height: 50px;
     bottom: -75px;/*deixa mais la em baixo*/
 }
 .card-case-name{
     position: absolute;
     font-size: 12px;
-    color: var(--color-primary);
+    color: black;
     right: 20px;
     bottom: 10px;
 }
 /*Cardápio*/
 .cardapio{
-    padding-top: 100px;
+    padding-top:100px;
     padding-bottom: 150px;
 }
 .cardapio .background-cardapio{
@@ -254,7 +739,7 @@ a.navbar-brand {
     left: 0;
     right: 0;
     height: 500px;
-    background-image: url(..//img/bg-icons-1.png);
+    background-color: transparent;
 }
 .container-menu{
     margin-bottom: 40px;/*descola da pagina*/
