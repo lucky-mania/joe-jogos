@@ -99,12 +99,7 @@
     top: 184px!important;
     z-index: 9999;
 }
-/*alterando*/
-.servicos {
-   
-    padding-bottom: 70px!important;
-}
-    
+/*Jogo*/
     .cardapio {
         padding-bottom: 50px;
     }
@@ -117,6 +112,7 @@
     }
 
     #itensCardapio {
+        background-color: aqua;
         display: flex;
         flex-direction: column!important;
         width: 380px!important;
@@ -133,7 +129,7 @@
         left: 15px;
     }
     .card-item{
-        height: 110px;
+        height: 180px;
         padding-left: 110px;
         justify-content: center;
         align-items: start;
@@ -157,7 +153,6 @@
     .card-item .add-carrinho{
         margin-top: 5px;
     }
-   
 /**/
     .depoimentos {
         padding-bottom: 50px;
