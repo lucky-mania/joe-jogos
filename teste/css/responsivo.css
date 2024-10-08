@@ -125,14 +125,16 @@
         margin-bottom: 15!important;
     }
     .img-produto{
+        position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
         position: absolute;
         left: 15px;
     }
     .card-item{
-        height: 180px;
+        height: 200px;
         padding-left: 110px;
         justify-content: center;
         align-items: start;
+        flex-direction: column;
     }
 
     .card-item .img-produto img{
