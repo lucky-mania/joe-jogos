@@ -99,17 +99,19 @@
     #itensCardapio .mb-5{
         margin-bottom: 15!important;
     }
-    .img-produto{
+    .img-jogo{
         position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
         position: absolute;
-        left: 15px;
+        top: 320px;
     }
     .card-item{
-        height: 200px;
+        width: 300px;
+        height: 400px;
         padding-left: 110px;
         justify-content: center;
         align-items: start;
         flex-direction: column;
+        background-color: pink;
     }
 
     .card-item .img-produto img{
@@ -121,14 +123,6 @@
         height: 30px!important;
         width: 100%;
         text-align: left!important;
-    }
-    .price-produto{
-        margin-bottom: 0px!important;
-        margin-top: 0px!important;
-        font-size: 22px!important;
-    }
-    .card-item .add-carrinho{
-        margin-top: 5px;
     }
 /**/
     .depoimentos {
