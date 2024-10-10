@@ -64,6 +64,10 @@
     .plays{
         left: 120px;
     }
+    .card-case{
+        margin-left: 1px;
+        top: 460px;
+    }
     .wheel-and-hamster{
     display: none;
     }
