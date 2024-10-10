@@ -44,9 +44,7 @@
         display: none;
     }
 /*Banner*/
-.banner-img{
-   width: 20px;
-}
+
 .banner{
     background-color: pink;
 }
@@ -56,8 +54,15 @@
         flex-direction: column;
     }
     .card-banner{
-
+        height: 360px;
+        width: 380px;
         margin-left: -20px;
+    }
+    img{
+        width: 340px;
+    }
+    .plays{
+        left: 120px;
     }
     .wheel-and-hamster{
     display: none;
