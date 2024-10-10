@@ -47,6 +47,9 @@
         display: none;
     }
 /*Banner*/
+.header{
+    width: 630px;
+}
 .banner{
     background-color: pink;
 }
