@@ -87,7 +87,9 @@
     }
 
     #itensCardapio {
-        background-color: aqua;
+        margin-left: 45px;
+        background-color:#2278466c;
+        border-radius: 10px;
         display: flex;
         flex-direction: column!important;
         width: 380px!important;
@@ -102,16 +104,15 @@
     .img-jogo{
         position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);
         position: absolute;
-        top: 320px;
+        top: 160px;
     }
     .card-item{
-        width: 300px;
-        height: 400px;
+        width: 330px;
+        height: 280px;
         padding-left: 110px;
         justify-content: center;
         align-items: start;
         flex-direction: column;
-        background-color: pink;
     }
 
     .card-item .img-produto img{
@@ -119,19 +120,13 @@
        }
 
     .title-produto{
-        margin-top: 0px!important;
+        margin-top: -150px!important;
         height: 30px!important;
         width: 100%;
-        text-align: left!important;
+        margin-left: -40px;
     }
 /**/
-    .depoimentos {
-        padding-bottom: 50px;
-    }
-
-    .reserva {
-        padding-bottom: 50px;
-    }
+   
 
     .card-secondary {
         padding: 45px;
