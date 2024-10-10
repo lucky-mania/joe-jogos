@@ -59,8 +59,14 @@
         flex-direction: column;
     }
     .card-banner{
+        display: none;
         height: 360px;
         width: 340px;  
+    }
+    .card-case{
+        display: none;
+        margin-left: 1px;
+        top: 460px;
     }
 
     img{
@@ -69,10 +75,7 @@
     .plays{
         left: 100px;
     }
-    .card-case{
-        margin-left: 1px;
-        top: 460px;
-    }
+  
     .wheel-and-hamster{
     display: none;
     }
