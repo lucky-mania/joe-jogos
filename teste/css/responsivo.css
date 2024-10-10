@@ -74,7 +74,7 @@
     .title {
         font-size: 30px;
     }
-/*Jogo*/
+/*Jogos*/
     .cardapio {
         padding-bottom: 50px;
     }
@@ -87,7 +87,7 @@
     }
 
     #itensCardapio {
-        margin-left: 45px;
+
         background-color:#2278466c;
         border-radius: 10px;
         display: flex;
