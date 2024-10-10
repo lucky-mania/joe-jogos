@@ -11,6 +11,9 @@
     margin-top: 20px;
     width: 100px;
 }
+.buttons{
+    display: none;
+}
     .price-produto{
         background-color: pink;
         display: none!important;
