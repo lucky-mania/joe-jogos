@@ -50,6 +50,9 @@
 .header{
     width: 630px;
 }
+.buttons{
+    display: none;
+}
 .banner{
     background-color: pink;
 }
