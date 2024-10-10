@@ -19,12 +19,7 @@
     --color-green:#2ecc71;
     --color-separate:#cccccc;
 }
-body{
-  background-image: url('../img/backgroundImg.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -17px;
-}
+
 html,body{
     font-family: 'PoppinsRegular', 'Rubik' , 'sans-serif';
     color: var(--color-text);

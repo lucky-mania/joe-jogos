@@ -6,12 +6,13 @@
 ::-webkit-scrollbar{
     display: none;
 }
-/*Banner*/
-.juntos{
-    flex-direction: column;
+/*header*/
+.img-logo{
+    margin-top: 20px;
+    width: 100px;
 }
     .price-produto{
-        background-color: aqua;
+        background-color: pink;
         display: none!important;
     }
 
@@ -42,12 +43,25 @@
     .navbar-collapse .btn-icon span.icon {
         display: none;
     }
-
+/*Banner*/
+.banner-img{
+   width: 20px;
+}
+.banner{
+    background-color: pink;
+}
     .banner {
         padding-top: 50px;
         padding-bottom: 50px;
+        flex-direction: column;
     }
+    .card-banner{
 
+        margin-left: -20px;
+    }
+    .wheel-and-hamster{
+    display: none;
+    }
     .text-banner h1 {
         font-size: 36px;
     }
@@ -87,7 +101,6 @@
     }
 
     #itensCardapio {
-
         background-color:#2278466c;
         border-radius: 10px;
         display: flex;
