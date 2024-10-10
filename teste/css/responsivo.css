@@ -47,9 +47,6 @@
         display: none;
     }
 /*Banner*/
-.header{
-    display: none;
-}
 .banner{
     background-color: pink;
 }
@@ -70,6 +67,7 @@
         left: 100px;
     }
     .card-case{
+        display: none;
         margin-left: 1px;
         top: 460px;
     }
