@@ -7,20 +7,12 @@
     display: none;
 }
 /*header*/
+
 .img-logo{
     height: 70px;
     width: 70px;
 }
-.buttons{
-    display: none;
-}
-    .price-produto{
-        background-color: aqua;
-        display: none!important;
-    }
-
     .col-one {
-        background-color: pink;
         padding-left: 35px!important;
         padding-right: 35px!important;
     }
@@ -44,10 +36,6 @@
 
     .navbar-collapse .btn-icon {
         padding-right: 20px;
-    }
-
-    .navbar-collapse .btn-icon span.icon {
-        display: none;
     }
 /*Banner*/
 .header{
