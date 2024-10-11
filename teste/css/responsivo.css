@@ -62,13 +62,12 @@
         flex-direction: column;
     }
     .card-banner{
-        
+        margin-left: -50px;
         height: 360px;
         width: 340px;  
     }
     .card-case{
-        
-        margin-left: 1px;
+        margin-left: -10px;
         top: 460px;
     }
 
