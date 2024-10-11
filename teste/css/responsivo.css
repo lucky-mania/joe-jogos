@@ -48,7 +48,7 @@
     }
 /*Banner*/
 .header{
-    display: none;
+    width: 390px;
 }
 .buttons{
     display: none;
