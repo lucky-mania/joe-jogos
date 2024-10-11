@@ -9,16 +9,16 @@
 /*header*/
 
 .img-logo{
-    height: 70px;
-    width: 70px;
+    margin-top: 19px;
+    height: 100px;
+    width: 100px;
 }
     .col-one {
         padding-left: 35px!important;
         padding-right: 35px!important;
     }
   
-    .navbar-toggler-icon {
-        background-color: blue;
+    .navbar-toggler-icon 
         margin-top: -220px;
         padding-top: 5px;
     }
@@ -39,7 +39,7 @@
     }
 /*Banner*/
 .header{
-    width: 390px;
+    width: 410px;
 }
 .buttons{
     display: none;
