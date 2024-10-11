@@ -15,7 +15,7 @@
     display: none;
 }
     .price-produto{
-        background-color: pink;
+        background-color: aqua;
         display: none!important;
     }
 
@@ -53,9 +53,6 @@
 .buttons{
     display: none;
 }
-.banner{
-    background-color: pink;
-}
     .banner {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -67,12 +64,14 @@
     }
     .card-banner{
         margin-left: -1px;
-        height: 360px;
+        height: 310px;
         width: 340px;  
     }
     .card-case{
+        color: white;
+        background-color: gray;
         margin-left: -1px;
-        top: 460px;
+        top: 415px;
     }
 
     img{
