@@ -8,8 +8,8 @@
 }
 /*header*/
 .img-logo{
-    margin-top: 20px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
 }
 .buttons{
     display: none;
@@ -20,11 +20,14 @@
     }
 
     .col-one {
+        background-color: pink;
         padding-left: 35px!important;
         padding-right: 35px!important;
     }
   
     .navbar-toggler-icon {
+        background-color: blue;
+        margin-top: -220px;
         padding-top: 5px;
     }
 
